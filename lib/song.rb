@@ -20,7 +20,8 @@ class Song
   def self.new_by_name(name)
     song = self.new
     song.name = name
-    @@all << song
+   # @@all << song
+    song.save
     song
   end
   
